@@ -1,0 +1,33 @@
+{% extends "base.html" %}   #<!--Use base.html file and extend to it-->
+
+{%block content%}
+    <div class="form1-container">
+        <div class="form1">
+        <form method="POST" action="/login"> <!--attribute that specify to send data to "/login" route using post method-->-->
+            <h1>LOGIN</h1>
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <input type="text" name="email" placeholder="email"   required>  <!--email-box-->
+            </div>
+
+            <div class="input-box">
+                <i class='bx bx-lock'></i>
+                <input type="password" name="password" placeholder="password" required> <!--password-box-->
+            </div>
+
+
+            <div class="login-container">
+                <button type="submit" class="login">LOGIN</button> <!--Login Button-->
+            </div>
+        
+            <div class="sign-up">
+                <p>
+                    DON'T HAVE  AN ACCOUNT<a href="{{url_for('signup')}}"> REGISTER</a> <!--link to /signup page-->
+                </p>
+            </div>
+
+
+        </form>
+        </div>
+    </div>
+{% endblock %}

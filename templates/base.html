@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--sets viewport property to control layout for different devices-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">  <!--link to login.css file-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}"> <!--link to signup.css file-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--links to an external stylesheet provided by Boxicons for icon styling-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Includes jQuery library from the Google CDN.-->
+    <title>API BASED SIGNUP/LOGIN SYSTEM</title>
+</head>
+<body>
+    <!--Defined a block named "content" where content specific to each page can be inserted using Jinja templating-->
+    {% block content%}
+        
+    {%endblock %}
+    <div class="footer">
+        <p>API BASED LOGIN/SIGNIN SYSTEM</p>
+    </div>
+</body>
+</html>

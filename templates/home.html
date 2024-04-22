@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome {{ username }}</h1>
+    </div>
+    <div class="flex-container">
+        <div class="pic">
+            <img class="img" src="https://static.vecteezy.com/system/resources/previews/000/662/022/original/man-sitting-with-a-laptop-vector.jpg">
+        </div>
+        <div class="content">
+            <h1 class="h_text">API BASED SIGNUP LOGIN SYSTEM</h1>
+            <p class="p_text">An API-based login/signup system is a mechanism used by web applications to manage<br> user authentication and authorization through Application Programming Interfaces (APIs).<br> This system allows users to create accounts, log in securely, and access protected<br> resources or perform actions within the application.<br><br> signup/login systems are crucial components of modern web applications, providing a secure<br> and efficient means for users to access and interact with online services.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>API BASED LOGIN/SIGNIN SYSTEM</p>
+    </div>
+</body>
+</html>

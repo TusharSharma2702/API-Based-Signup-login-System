@@ -1,0 +1,55 @@
+.form2 {
+    width: auto;
+    border: 2px solid white;
+    color: antiquewhite;
+}
+
+.form2 h1 {
+    font-size: 36px;
+    font: Calibri;
+    text-align:center;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+.signup-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Sign-Up {
+    height: 30px;
+    width: 100px;
+    background-color: rgb(14, 123, 248);
+    color: white;
+    border: none;
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.form2 input {
+    color: white; /* Set text color to white */
+    font-size: 20px;
+}
+
+.log-in {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.input-box {
+    height: 35px;
+    width: 300px;
+    font-size: 20px;
+}

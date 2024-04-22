@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}">  <!--link to error.css file-->
+    <title>Error Page</title>
+
+</head>
+<body>
+    <img class="img" src="https://p.productioncrate.com/stock-hd/effects/footagecrate-red-error-icon-prev-full.png" alt="">
+    <div class="error-container">
+        <h1>Error 400</h1>
+        <p class="error-message">{{ error }}</p>
+        {% if error == "e-mail not registered try sign in" %}
+            <button class="link" type="submit"><a  href="{{ url_for('signup') }}">Sign In</a></button>
+        {% elif error == "Passwords is incorrect" %}
+            <button class="link" type="submit"><a href="{{ url_for('login') }}">Go Back</a></button>
+        {% else %}
+            <button class="link" type="submit"><a href="{{ url_for('signup') }}">Go Back</a></button>
+        {% endif %}
+    </div>
+</body>
+</html>

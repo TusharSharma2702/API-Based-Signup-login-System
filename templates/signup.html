@@ -1,0 +1,47 @@
+{% extends "base.html" %}   <!--Use base.html file and extend to it-->
+
+{%block content%}
+    <div class="form2-container">
+        <div class="form2">
+        <form method="POST" action="/signup"> <!--attribute that specify to send data to "/signup" route using post method-->
+            <h1>SIGNUP</h1>
+            <div class="input-box">
+                <i class='bx bxs-user'></i> <!--show user icon-->
+                <input type="text" name="username" placeholder="Username"   required>  <!--Username-box-->
+            </div>
+            
+            <div class="input-box">
+                <i class='bx bxl-gmail' ></i> <!--show mail icon-->
+                <input type=""text" name="email" placeholder="E-mail"  required> <!--Email-box-->
+            </div>
+
+            <div class="input-box">
+                <i class='bx bx-lock'></i> <!--show lock icon-->
+                <input type="password" name="password" placeholder="password" required> <!--password-box-->
+            </div>
+
+            <div class="input-box">
+                <i class='bx bx-lock'></i> <!--show lock icon-->
+                <input type="password" name="confirm_password" placeholder="re-type password" required> <!--Confirm password3-box-->
+            </div>
+
+            <div class="signup-container">
+                <button type="submit" class="Sign-Up">Sign-Up</button> <!--Submit button-->
+            </div>
+        
+            <div class="log-in">
+                <p>
+                    HAVE  AN ACCOUNT<a a href="{{url_for('login')}}"> Login</a> <!--link to login page-->
+                </p>
+            </div>
+        </form>
+        </div>
+    </div>
+    <!-- 
+    This JavaScript code sets the method attribute of the form element to "POST" when the document loads.-->
+    <script>
+        const form = document.querySelector("form");
+         // Set the method attribute of the form to "POST"
+        form.setAttribute("method", "POST");
+    </script>
+{% endblock %}
